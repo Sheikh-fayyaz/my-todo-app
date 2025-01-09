@@ -1,0 +1,122 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f4f4f8; /* Soft background color */
+  color: #333;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+h1, p {
+  margin: 0;
+}
+
+/* Header Styles */
+.header {
+  padding: 1.5rem 0;
+  text-align: center;
+  background: #4a90e2; /* Soft blue */
+  color: white;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* AddTodo Styles */
+.add-todo {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+.add-todo input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.add-todo button {
+  padding: 0.75rem 1.5rem;
+  background: #4caf50; /* Green color */
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.add-todo button:hover {
+  background: #43a047; /* Slightly darker green */
+}
+
+/* TodoList Styles */
+.todo-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list p {
+  text-align: center;
+  color: #888;
+  margin-top: 1rem;
+}
+
+/* TodoItem Styles */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item span {
+  word-break: break-word;
+}
+
+.todo-item button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ff4d4d; /* Red color */
+  font-size: 1.2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.todo-item button:hover {
+  color: #d32f2f; /* Darker red */
+}
